@@ -154,21 +154,21 @@ mask: collect [
 	foreach [tag name] buttons [
 		keep compose [
 	  	 below (to set-word! name) area 300x50 (copy "") wrap 
-	  ]
+	  	]
 	]
 		
 
 
 
   
-  keep compose [return across below return]
-  	
-  foreach [tag name] buttons [
-  	name-string: to string! name
-      keep compose/deep [
-          (to set-word! tag) button 80 (name-string) data (name) [if area1/selected <> none [b2: face/data (to-string name) copycut (name-string) do select-text ]]
-      ]
-  ]
+	  keep compose [return across below return]
+
+	  foreach [tag name] buttons [
+		name-string: to string! name
+	      keep compose/deep [
+		  (to set-word! tag) button 80 (name-string) data (name) [if area1/selected <> none [b2: face/data (to-string name) copycut (name-string) do select-text ]]
+	      ]
+	  ]
 
 
     	
@@ -178,12 +178,13 @@ mask: collect [
 		 across
 	   BT-Select: button "Seleziona" 70 [do select-text]
 	]
-		keep compose [
-		  across 
-			upkey: button "Up" 40 [totalnl: totalnl + 1 nlnum/data: to-string totalnl do select-text] ;mettere select
-			below
-			downkey: Button "down" 40 [if totalnl <> 1 [totalnl: totalnl - 1 nlnum/data: to-string totalnl] do select-text] ;mettere select
-		]
+	
+	keep compose [
+	  across 
+		upkey: button "Up" 40 [totalnl: totalnl + 1 nlnum/data: to-string totalnl do select-text] ;mettere select
+		below
+		downkey: Button "down" 40 [if totalnl <> 1 [totalnl: totalnl - 1 nlnum/data: to-string totalnl] do select-text] ;mettere select
+	]
 		
 		
 
@@ -192,18 +193,17 @@ mask: collect [
 		return
 	 	BT-SAVE: button "Save" 50 [foreach [tag name] buttons [write to-file name select get to-word name 'text]]
 	]
-		keep compose/deep [
+	
+	keep compose/deep [
 		return
-	 	BT-LOAD: button "Load" 50 [foreach [tag name] buttons [
-	 			if exists? to-file name [
-	 				filebody: read to-file name 
-	 				change select get to-word name 'text filebody
-	 			]
-	 		]
-	 	]
-	 	BT-CLEAR: Button "Clear" 50 [area1/text: copy ""]
-	 	
-	 	
+		BT-LOAD: button "Load" 50 [foreach [tag name] buttons [
+				if exists? to-file name [
+					filebody: read to-file name 
+					change select get to-word name 'text filebody
+				]
+			]
+		]
+		BT-CLEAR: Button "Clear" 50 [area1/text: copy ""]
 	]
 ]   
 
