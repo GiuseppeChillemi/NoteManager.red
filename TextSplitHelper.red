@@ -8,12 +8,12 @@ Red [
 	
 	notes: {Base code provided by 
 					
-					Toomaas Vooglaid (cut&paste) https://gist.github.com/toomasv/2cda8fb4ebe258d76c8f0cfddaf478e3 
-					Vladimir Vasilyev (dynamic coded gui) https://gitter.im/red/help?at=5bca5313ae7be94016849d31 
+		Toomaas Vooglaid (cut&paste) https://gist.github.com/toomasv/2cda8fb4ebe258d76c8f0cfddaf478e3 
+		Vladimir Vasilyev (dynamic coded gui) https://gitter.im/red/help?at=5bca5313ae7be94016849d31 
+			
+		on RED/HELP GITTER CHAT. 
 					
-					on RED/HELP GITTER CHAT. 
-					
-					************** THANKS FRIENDS ! ************
+		************** THANKS FRIENDS ! ************
 					
 					}
 					
@@ -24,24 +24,24 @@ Red [
 	
 	
 	Usage: {Insert the text you want to manually split in the big area. The small righ one are destination areas.
-				 Select the text you want to catalog and hit the category button to cut and paste it to the corresponding area for the category
+		Select the text you want to catalog and hit the category button to cut and paste it to the corresponding area for the category
 
-				 The Select button highlight text starting from the first character and ending to the "N th" end-of-line (the number displayed on screen)
+		The Select button highlight text starting from the first character and ending to the "N th" end-of-line (the number displayed on screen)
 
 
-				 Hit SAVE to store destinantion areas on disk, 
-				 load to retrieve previous saved one. 
-				 Clear will empty main entry area. 
-				 Up/Down change the auto select function to stop on the "N th" newline
+		Hit SAVE to store destinantion areas on disk, 
+		load to retrieve previous saved one. 
+		Clear will empty main entry area. 
+		Up/Down change the auto select function to stop on the "N th" newline
 				 
-				 Each category button move the selected text the the corresponding area and AUTOSELECT the next text.				 
-	       I have adopted this work mode for speed reason.}
+		Each category button move the selected text the the corresponding area and AUTOSELECT the next text.				 
+	   	I have adopted this work mode for speed reason.}
 	       
 	 TODO: {Provide names above each destination text area
-	 			 let destination areas scroll when text overflows
-	  		 Provide an ON/OFF switch for auto code
-	  		 Add text description to the Newlines to skip number display
-	  		 Code cleaning }
+	 	let destination areas scroll when text overflows
+	  	Provide an ON/OFF switch for auto code
+	  	Add text description to the Newlines to skip number display
+	  	Code cleaning }
 	  		 
 	]
 
